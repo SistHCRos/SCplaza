@@ -1,0 +1,95 @@
+@import url("./components/navbar.css");
+@import url("./components/hero.css");
+
+
+/* =========================
+   FUENTES
+========================= */
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("../fonts/Tg.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("../fonts/Tp.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Text.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Tb.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Caveat Brush";
+    src: url("../fonts/Frases.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.TG {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.Tp {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+}
+
+.texto {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.frases {
+    font-family: "Caveat Brush", cursive;
+}
+
+.btn,
+.nav-link,
+.navbar-reservations {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+html,
+body {
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-height: 100%;
+
+    background-color: #111111;
+    color: #ffffff;
+
+}
+
+
+/* Evita espacios y problemas de altura */
+
+body {
+
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+}
