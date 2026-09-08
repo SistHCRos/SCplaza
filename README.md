@@ -13,10 +13,16 @@ Proyecto de modernizacion de pagina web
 
 ## Estructura
 
-- `assets/` → Recursos del proyecto
-- `components/` → Componentes reutilizables
-- `pages/` → Páginas adicionales
+carpetas 
 
+bootstrap 
+css
+img
+js
+json
+index.html
+
+etc
 ## Desarrollo
 
 Proyecto desarrollado con HTML, CSS, JavaScript y Bootstrap.

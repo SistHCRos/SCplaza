@@ -1,0 +1,47 @@
+{
+  "es": {
+    "pageTitle": "Título principal",
+    "metaDescription": "Descripción principal",
+
+    "logoAlt": "Logo",
+
+    "menu": "Abrir menú",
+    "idioma": "Cambiar idioma",
+
+    "nav1": "Nav 1",
+    "nav2": "Nav 2",
+    "nav3": "Nav 3",
+    "nav4": "Nav 4",
+    "nav5": "Nav 5",
+    "nav6": "Nav 6",
+    "nav7": "Nav 7",
+    "nav8": "Nav 8",
+
+    "reservas": "Reservas",
+
+    "idiomaActual": "EN"
+  },
+
+  "en": {
+    "pageTitle": "Main title",
+    "metaDescription": "Main description",
+
+    "logoAlt": "Logo",
+
+    "menu": "Open menu",
+    "idioma": "Change language",
+
+    "nav1": "Nav 1",
+    "nav2": "Nav 2",
+    "nav3": "Nav 3",
+    "nav4": "Nav 4",
+    "nav5": "Nav 5",
+    "nav6": "Nav 6",
+    "nav7": "Nav 7",
+    "nav8": "Nav 8",
+
+    "reservas": "Reservations",
+
+    "idiomaActual": "ES"
+  }
+}
