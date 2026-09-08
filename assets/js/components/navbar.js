@@ -1,10 +1,12 @@
+
+import { iniciarIdioma } from "../components/idioma.js";
+
+
 export async function loadNavbar() {
 
     try {
 
-        const response = await fetch(
-            "components/navbar.html"
-        );
+        const response = await fetch("..components/navbar.html");
 
         if (!response.ok) {
             throw new Error("No se pudo cargar el navbar");
@@ -12,20 +14,18 @@ export async function loadNavbar() {
 
         const navbarHTML = await response.text();
 
-        const navbarContainer =
-            document.getElementById("navbar");
+        const navbarContainer = document.getElementById("navbar");
 
         navbarContainer.innerHTML = navbarHTML;
 
-
         initializeNavbar();
+
+        // Iniciar idioma después de cargar el navbar
+        iniciarIdioma();
 
     } catch (error) {
 
-        console.error(
-            "Error cargando navbar:",
-            error
-        );
+        console.error("Error cargando navbar:", error);
 
     }
 
@@ -34,22 +34,16 @@ export async function loadNavbar() {
 
 function initializeNavbar() {
 
-    const toggle =
-        document.getElementById("navbarToggle");
-
-    const menu =
-        document.getElementById("navbarMenu");
-
+    const toggle = document.getElementById("navbarToggle");
+    const menu = document.getElementById("navbarMenu");
 
     if (!toggle || !menu) return;
-
 
     toggle.addEventListener("click", () => {
 
         menu.classList.toggle("active");
 
-        const icon =
-            toggle.querySelector("i");
+        const icon = toggle.querySelector("i");
 
         icon.classList.toggle("bi-list");
         icon.classList.toggle("bi-x");
@@ -57,9 +51,7 @@ function initializeNavbar() {
     });
 
 
-    const links =
-        menu.querySelectorAll(".nav-link");
-
+    const links = menu.querySelectorAll(".nav-link");
 
     links.forEach(link => {
 
@@ -67,8 +59,7 @@ function initializeNavbar() {
 
             menu.classList.remove("active");
 
-            const icon =
-                toggle.querySelector("i");
+            const icon = toggle.querySelector("i");
 
             icon.classList.remove("bi-x");
             icon.classList.add("bi-list");
