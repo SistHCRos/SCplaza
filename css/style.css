@@ -1,3 +1,39 @@
+@font-face {
+    font-family: "TG";
+    src: url("../fonts/TG.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TB";
+    src: url("../fonts/TB.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TP";
+    src: url("../fonts/TP.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Text";
+    src: url("../fonts/text.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Frases";
+    src: url("../fonts/frases.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 main {
     min-height: 100vh;
     background: #333333;
@@ -19,7 +55,9 @@ main {
 
     padding: 15px 35px;
 
-    background: transparent;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 
     z-index: 1000;
 
@@ -472,6 +510,494 @@ main {
     .nav-socials {
 
         display: none;
+
+    }
+
+}
+
+/* ==================================================
+   HERO
+================================================== */
+
+#hero {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 100vh;
+    height: 100svh;
+
+    min-height: 600px;
+
+    overflow: hidden;
+
+}
+
+
+#heroCarousel,
+#heroCarousel .carousel-inner,
+#heroCarousel .carousel-item {
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+
+/* ==================================================
+   IMAGEN
+================================================== */
+
+.hero-img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+}
+
+
+/* ==================================================
+   TRANSICIÓN
+================================================== */
+
+.carousel-fade .carousel-item {
+
+    opacity: 0;
+
+    transition: opacity 1s ease-in-out;
+
+}
+
+
+.carousel-fade .carousel-item.active {
+
+    opacity: 1;
+
+}
+
+
+/* ==================================================
+   CONTROLES
+================================================== */
+
+#heroCarousel .carousel-control-prev,
+#heroCarousel .carousel-control-next {
+
+    width: 8%;
+
+    border: 0;
+
+    color: #ffffff;
+
+    font-size: 32px;
+
+    opacity: 0.7;
+
+}
+
+
+#heroCarousel .carousel-control-prev:hover,
+#heroCarousel .carousel-control-next:hover {
+
+    opacity: 1;
+
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 991.98px) {
+
+    #hero {
+
+        min-height: 550px;
+
+    }
+
+
+    #heroCarousel .carousel-control-prev,
+    #heroCarousel .carousel-control-next {
+
+        width: 12%;
+
+        font-size: 28px;
+
+    }
+
+}
+
+
+/* ==================================================
+   MÓVIL
+================================================== */
+
+@media (max-width: 575.98px) {
+
+    #hero {
+
+        height: 100svh;
+
+        min-height: 500px;
+
+    }
+
+
+    .hero-img {
+
+        object-position: center center;
+
+    }
+
+
+    #heroCarousel .carousel-control-prev,
+    #heroCarousel .carousel-control-next {
+
+        width: 15%;
+
+        font-size: 24px;
+
+    }
+
+}
+
+/* ==================================================
+   CONTENIDO HERO
+================================================== */
+
+.hero-content {
+
+    position: absolute;
+
+    top: 90px;
+    left: 0;
+
+    width: 100%;
+    height: calc(100% - 90px);
+
+    padding: 0 5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    z-index: 5;
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   TÍTULOS GRANDES
+================================================== */
+
+.hero-titulos {
+
+    display: flex;
+    flex-direction: column;
+
+    line-height: 0.78;
+
+}
+
+
+.hero-titulo {
+
+    font-family: "TG", sans-serif;
+
+    font-size: clamp(4rem, 13vw, 14rem);
+
+    color: #FA43F7;
+
+    white-space: nowrap;
+
+}
+
+
+/* ==================================================
+   FRASE
+================================================== */
+
+.hero-frase {
+
+    position: relative;
+
+    z-index: 1;
+
+    display: flex;
+
+    gap: 1.5rem;
+
+    margin-top: -1.2vw;
+    margin-left: 3vw;
+
+    font-family: "Frases", sans-serif;
+
+    font-size: clamp(10rem, 8vw, 15rem);
+
+    color: #FA43F7;
+
+    line-height: 1;
+}
+
+
+/*
+   La segunda palabra grande queda visualmente
+   por encima de una pequeña parte de la frase.
+*/
+
+.hero-titulo:nth-child(2) {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 991.98px) {
+
+    .hero-content {
+
+        top: 75px;
+
+        height: calc(100% - 75px);
+
+        padding: 0 4vw;
+
+    }
+
+
+    .hero-titulo {
+
+        font-size: clamp(6rem, 18vw, 12rem);
+
+    }
+
+
+    .hero-frase {
+
+        gap: 1rem;
+
+        margin-top: -1vw;
+
+        font-size: clamp(1.3rem, 3.5vw, 2.5rem);
+
+    }
+
+}
+
+
+/* ==================================================
+   MÓVIL
+================================================== */
+
+@media (max-width: 575.98px) {
+
+    .hero-content {
+
+        top: 65px;
+
+        height: calc(100% - 65px);
+
+        padding: 0 20px;
+
+    }
+
+
+    .hero-titulo {
+
+        font-size: clamp(4.5rem, 20vw, 7rem);
+
+        white-space: normal;
+
+    }
+
+
+    .hero-frase {
+
+        flex-wrap: wrap;
+
+        gap: .5rem;
+
+        margin-top: 5px;
+        margin-left: 5px;
+
+        font-size: clamp(1.2rem, 6vw, 2rem);
+
+    }
+
+}
+
+/* ==================================================
+   BOTONES HERO
+================================================== */
+
+.hero-botones {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 35px;
+    margin-left: 3vw;
+
+    pointer-events: auto;
+
+}
+
+
+.hero-btn {
+
+    display: inline-flex;
+
+    min-width: 190px;
+    min-height: 58px;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 32px;
+
+    font-family: "TB", sans-serif;
+
+    font-size: 16px;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+
+}
+
+
+/* BOTÓN 1 */
+
+.hero-btn-principal {
+
+    background: #FA43F7;
+
+    color: #111111;
+
+    border: 1px solid #ffffff;
+
+}
+
+
+.hero-btn-principal:hover {
+
+    background: transparent;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* BOTÓN 2 */
+
+.hero-btn-secundario {
+
+    background: rgba(255, 255, 255, 0.10);
+
+    color: #ffffff;
+
+    border: 1px solid #ffffff;
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+}
+
+
+.hero-btn-secundario:hover {
+
+    background: #FA43F7;
+
+    color: #111111;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 991.98px) {
+
+    .hero-botones {
+
+        margin-top: 28px;
+
+    }
+
+
+    .hero-btn {
+
+        min-width: 170px;
+        min-height: 54px;
+
+        padding: 12px 26px;
+
+        font-size: 15px;
+
+    }
+
+}
+
+
+/* ==================================================
+   MÓVIL
+================================================== */
+
+@media (max-width: 575.98px) {
+
+    .hero-botones {
+
+        width: 100%;
+
+        gap: 10px;
+
+        margin-top: 25px;
+        margin-left: 0;
+
+    }
+
+
+    .hero-btn {
+
+        flex: 1;
+
+        min-width: 0;
+        min-height: 52px;
+
+        padding: 12px 15px;
+
+        font-size: 14px;
+
+        text-align: center;
 
     }
 

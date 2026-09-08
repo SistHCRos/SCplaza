@@ -60,5 +60,10 @@ document.addEventListener(
             "mod/nav.html"
         );
 
+         await cargarModulo(
+            "heroModulo",
+            "mod/hero.html"
+        );
+
     }
 );

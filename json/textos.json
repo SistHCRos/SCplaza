@@ -8,16 +8,38 @@
     "menu": "Abrir menú",
     "idioma": "Cambiar idioma",
 
-    "nav1": "Nav 1",
-    "nav2": "Nav 2",
-    "nav3": "Nav 3",
-    "nav4": "Nav 4",
-    "nav5": "Nav 5",
-    "nav6": "Nav 6",
-    "nav7": "Nav 7",
-    "nav8": "Nav 8",
+    "nav1": "HABITACIONES",
+    "nav2": "EXPERIENCIAS",
+    "nav3": "RESTAURANTES & BARES",
+    "nav4": "AMENIDADES",
+    "nav5": "EVENTOS",
+    "nav6": "NEGOCIOS",
+    "nav7": "PROMOCIONES",
+    "nav8": "ROSARITO",
 
     "reservas": "Reservas",
+
+    "heroImagen1": "Imagen 1",
+    "heroImagen2": "Imagen 2",
+    "heroImagen3": "Imagen 3",
+    "heroImagen4": "Imagen 4",
+    "heroImagen5": "Imagen 5",
+    "heroImagen6": "Imagen 6",
+    "heroImagen7": "Imagen 7",
+    "heroImagen8": "Imagen 8",
+
+    "heroAnterior": "Imagen anterior",
+    "heroSiguiente": "Imagen siguiente",
+
+    "heroTitulo1": "VIVE",
+    "heroTitulo2": "ROSARITO",
+
+    "heroFrase1": "a",
+    "heroFrase2": "tu",
+    "heroFrase3": "manera",
+
+    "heroBoton1": "Reserva Ahora",
+    "heroBoton2": "Ver Habitaciones",
 
     "idiomaActual": "EN"
   },
@@ -31,16 +53,38 @@
     "menu": "Open menu",
     "idioma": "Change language",
 
-    "nav1": "Nav 1",
-    "nav2": "Nav 2",
-    "nav3": "Nav 3",
-    "nav4": "Nav 4",
-    "nav5": "Nav 5",
-    "nav6": "Nav 6",
-    "nav7": "Nav 7",
-    "nav8": "Nav 8",
+    "nav1": "ROOMS",
+    "nav2": "EXPERIENCES",
+    "nav3": "RESTAURANTS & BARS",
+    "nav4": "AMENITIES",
+    "nav5": "EVENTS",
+    "nav6": "BUSINESS",
+    "nav7": "PROMOTIONS",
+    "nav8": "ROSARITO",
 
     "reservas": "Reservations",
+    
+    "heroImagen1": "Image 1",
+    "heroImagen2": "Image 2",
+    "heroImagen3": "Image 3",
+    "heroImagen4": "Image 4",
+    "heroImagen5": "Image 5",
+    "heroImagen6": "Image 6",
+    "heroImagen7": "Image 7",
+    "heroImagen8": "Image 8",
+
+    "heroAnterior": "Previous image",
+    "heroSiguiente": "Next image",
+
+    "heroTitulo1": "VIVE",
+    "heroTitulo2": "ROSARITO",
+
+    "heroFrase1": "a",
+    "heroFrase2": "tu",
+    "heroFrase3": "manera",
+
+    "heroBoton1": "Book Now",
+    "heroBoton2": "View Rooms",
 
     "idiomaActual": "ES"
   }
